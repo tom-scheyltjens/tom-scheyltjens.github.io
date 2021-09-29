@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+  order: 1;
+  background-color: #f5eec2;
+  color: #39395f;
+}
+nav {
+  background: #a9c25d;
+  display: flex;
+  justify-content: flex-end;
+}
+img {
+  border-radius: 14px;
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background: #a9c25d;
+  height: 200px; //for logo, otherwise it would fill up the article when screen gets smaller
+}
+
+article > header {
+  background: #73a24e;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: #a9c25d;
+  color: #39395f;
+  height: 10vh;
+}
+header, footer, article, nav, aside, section {
+  padding: 1em;
+}
+
+.button {
+  background-color: #f5eec2;
+  color: #39395f;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #39395f;
+  color: white;
+}
